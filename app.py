@@ -5,8 +5,8 @@ from flask import Flask, render_template, request, send_file
 from flask_sqlalchemy import SQLAlchemy 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://default:kGXU5uHmMjg7@ep-spring-hat-a46eaa7d.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
-#app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://flask_database_example_user:QH9XiIvRg3IpGcoSk4WHWSkC1nvPBpso@dpg-crn6a0g8fa8c738a6re0-a.oregon-postgres.render.com/flask_database_example"
+#app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://default:kGXU5uHmMjg7@ep-spring-hat-a46eaa7d.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://flask_database_example_user:QH9XiIvRg3IpGcoSk4WHWSkC1nvPBpso@dpg-crn6a0g8fa8c738a6re0-a.oregon-postgres.render.com/flask_database_example"
 #app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://flask_database_example_user:QH9XiIvRg3IpGcoSk4WHWSkC1nvPBpso@dpg-crn6a0g8fa8c738a6re0-a/flask_database_example"
 #"postgres://default:************@ep-spring-hat-a46eaa7d.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False 
